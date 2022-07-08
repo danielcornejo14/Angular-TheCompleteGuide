@@ -8,11 +8,15 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeDetailComponent implements OnInit {
 
+  isControlsOpen = false
+
   @Input() recipe: Recipe;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
 }

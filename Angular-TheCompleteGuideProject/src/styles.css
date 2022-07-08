@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+.dropDownStyle{
+    position: absolute; 
+    inset: 0px auto auto 0px; 
+    margin: 0px; transform: 
+    translate3d(0px, 39.6694px, 0px);
+}
+
+.dropDownStyleLeft{
+    position: absolute;
+    inset: 0px 0px auto auto;
+    margin: 0px;
+    transform: translate3d(0px, 39.6694px, 0px);
+}
+

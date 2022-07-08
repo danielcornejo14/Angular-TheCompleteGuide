@@ -7,6 +7,8 @@ import { Component, EventEmitter, Output } from "@angular/core";
 })
 export class HeaderComponent{
 
+  isControlsOpen = false
+
   @Output() featureSelected = new EventEmitter<string>();
 
   onSelect(feature: string){

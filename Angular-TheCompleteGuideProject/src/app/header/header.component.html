@@ -9,13 +9,15 @@
             </ul>
     
             <ul class="navbar-nav ms-auto">
-                <button class="btn btn-secondary dropdown-toggle">Manage</button>
                 <div class="dropdown">
-                    <ul class="dropdown-menu">
-                        <li class="nav-item"><a href="#" class="nav-link">Save Data</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Save Data</a></li>
+                    <button class="btn btn-secondary dropdown-toggle" [ngClass]="{show: this.isControlsOpen}" (click)="this.isControlsOpen = !this.isControlsOpen">Manage</button>
+                    <ul class="dropdown-menu"  [ngClass]="{show: this.isControlsOpen, dropDownStyleLeft: this.isControlsOpen}" >
+                        <li class="nav-item"><a ref="#" class="dropdown-item">Save Data</a></li>
+                        <li class="nav-item"><a href="#" class="dropdown-item">Fetch Data</a></li>
                     </ul>
                 </div>
+
+
 
             </ul>
         </div>
